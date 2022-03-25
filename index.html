@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tic Tac Toe</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <style>
+        body{
+            font-family: "Trirong", serif; 
+        }
+    </style>
+</head>
+<body id="main">
+<div class="first-container">
+    <div class="game-name">
+        <span id="first">T</span>IC <span id="second">T</span>AC <span id="third">T</span>OE
+        </div>
+        <div class="start-game">
+            <button class="start-btn" id="my-btn"><span id="first">le</span><span id="second">t's</span><span id="third">pl</span><span id="fourth">ay</span></button>
+        </div>
+</div> 
+<div class="second-container" id="first-modal">
+    <div class="game-name">
+        <span id="first">T</span>IC <span id="second">T</span>AC <span id="third">T</span>OE
+        </div>
+    <h2 id="select">Select which you want to be?</h2>
+    <div class="choose">
+    <button id="choose-x" onclick="myfun1()">Player(<span id="x">X </span>)</button>
+    <button id="choose-o" onclick="myfun2()">Player(<span id="o">O</span>)</button>
+    <button id="back-1">back</button>
+    </div>
+</div>
+<div class="third-container" id="second-modal">
+    <div class="turns">
+        <button id="x-turn"><span id="x">X'S </span>TURN</button>
+        <button id="o-turn"><span id="o">O'S </span>TURN</button>
+    </div>
+    <div class="boxes">
+        <div id="div1" onclick="fill(this)"></div>
+        <div id="div2" onclick="fill(this)"></div>
+        <div id="div3" onclick="fill(this)"></div>
+        <div id="div4" onclick="fill(this)"></div>
+        <div id="div5" onclick="fill(this)"></div>
+        <div id="div6" onclick="fill(this)"></div>
+        <div id="div7" onclick="fill(this)"></div>
+        <div id="div8" onclick="fill(this)"></div>
+        <div id="div9" onclick="fill(this)"></div>
+    </div>
+    <button id="back-2">back</button>
+</div>
+<div class="fourth-container" id="third-modal">
+    <h1>Game Over!!</h1>
+    <h2><span id="won"> </span></h2>
+   <div class="over-replay">
+      
+       <button id="replay" onclick="replay()">Replay</button>
+   </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
